@@ -28,5 +28,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: ./server
           push: true
           tags: 301102/quest1902:latest
